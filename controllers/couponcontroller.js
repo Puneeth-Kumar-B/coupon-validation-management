@@ -24,7 +24,7 @@ const createCoupon = async(req, res) => {
             const couponCreation = await Coupon;
             if (couponCreation) {
                 couponCreation.save();
-                return res.status(200).json({ message: "Coupon Created Successfully :)" });
+                return res.status(201).json({ message: "Coupon Created Successfully :)" });
             }
         }
     } catch (err) {
